@@ -1,0 +1,16 @@
+For:
+Crea un bucle que consiste en tres expresiones opcionales, encerradas en paréntesis y separadas por puntos y comas, seguidas de una sentencia ejecutada en un bucle.
+Ejemplo de For:
+for (var i = 0; i < 9; i++) {
+  n += i;
+  mifuncion(n);
+}
+While:
+Crea un bucle que ejecuta una sentencia especificada mientras cierta condición se evalúe como verdadera. Dicha condición es evaluada antes de ejecutar la sentencia
+Ejemplo while:
+n = 0;
+x = 0;
+while (n < 3) {
+  n ++;
+  x += n;
+}
