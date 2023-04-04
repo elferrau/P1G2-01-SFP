@@ -14,3 +14,27 @@ while (n < 3) {
   n ++;
   x += n;
 }
+If:
+IF es una estructura de control utilizada para tomar decisiones. Es un condicional que sirve para realizar unas u otras operaciones en función de una expresión. Funciona de la siguiente manera, primero se evalúa una expresión, si da resultado positivo se realizan las acciones relacionadas con el caso positivo.
+ejemplo IF
+if (expresión) { 
+   //acciones a realizar en caso positivo 
+   //... 
+}
+Case:
+En programación, una sentencia switch es una instrucción de flujo de control que prueba el valor de una expresión expression contra varios casos.
+Ejemplo de case:
+switch (expresion) {
+  case 1:
+   //este código se ejecutará si el caso coincide con la expresión
+    break;
+  case 2:
+   //este código se ejecutará si el caso coincide con la expresión
+    break;
+  case 3:
+   //este código se ejecutará si el caso coincide con la expresión
+    break;
+  default:
+    //este código se ejecutará si ninguno de los casos coincide con la expresión
+    break;
+}
