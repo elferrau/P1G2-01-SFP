@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Avance 7</h1>
+<hr>
+<p>factorial de un numero</p>
+<button onclick="FactorialNumero(5)">FactorialNumero</button>
+
+<p>Sumar el factorial de dos numeros</p>
+<button onclick="SumarFactorialAyB(5)">SumarFactoriaAyB</button>
+
+<p>EjercicioUno</p>
+<button onclick="EjercicioUno()" >EjercicioUno</button>
+
+<p>EjercicioDos</p>
+<button onclick="EjercicioDos()">EjercicioDos</button>
+
+<p>EjercicioTres</p>
+<button onclick="EjercicioTres()">EjercicioTres</button>
+
+<p>EjercicioCuatro</p>
+<button onclick="EjercicioCuatro()">EjercicioCuatro</button>
+
+<p>CondicionalAnidada_UsandoY</p>
+<button onclick="CondicionalAnidada_UsandoY()">CondicionalAnidada_UsandoY</button>
+
+<p>CondicionalCompuesta_UsandoY</p>
+<button onclick="CondicionalCompuesta_UsandoY()">CondicionalCompuesta_UsandoY</button>
+
+<p>CondicionalCompuesta_UsandoO</p>
+<button onclick="CondicionalCompuesta_UsandoO()">CondicionalCompuesta_UsandoO</button>
+
+<p>CondicionalAnidada_UsandoO</p>
+<button onclick="CondicionalAnidada_UsandoO()">CondicionalAnidada_UsandoO</button>
+
+<script>
+function SumarFactorialAyB (){
+    var numeroA = 5
+    var numeroB = 5
+
+    var resultadoA = FactorialNumero(numeroA)
+    var resultadoB = FactorialNumero(numeroB)
+
+    var resultadoFinal = resultadoA + resultadoB
+    alert(resultadoFinal)
+}
+
+function FactorialNumero(numero){
+    var i = 1
+    var resultado = 1
+    while( i <= numero){
+        resultado = resultado * i
+        i = i + 1
+    }
+    alert(resultado)
+    return(resultado)
+}
+
+
+function EjercicioMetodoUno(){
+    if(((5 >= 5) == (9 < 10)) || ((10 >= 10) == false)){
+        alert("true")
+    }else{
+        alert("FALSE")
+    }
+}
+
+function EjercicioDos(){
+    if(((9 < 5) != true) || (false || (5 <= 9))){
+        alert("true")
+    }else{
+        alert("FALSE")
+    }
+}
+
+function EjercicioTres(){
+    if((((7 <= 7) == true) || (false == true) || (7 > 7))){
+        alert("true")
+    }else{
+        alert("FALSE")
+    }
+}
+
+function EjercicioCuatro(){
+    if(((true || !false) && (false)) != ((false && false) != (true))){
+        alert("true")
+    }else{
+        alert("FALSE")
+    }
+}
+
+//CONDICIONAL COMPUESTA &&
+function CondicionalCompuesta_UsandoY(){
+    if((5>9)&&(7!=5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")    
+    }
+}
+
+
+//CONDICIONALES ANIDADAS &&
+function CondicionalAnidada_UsandoY(){
+    if(5 > 9){
+        if(7 != 5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+    }
+        }else{
+        alert("FALSE")
+    }
+}
+
+//CONDICIONAL COMPUESTA ||
+function CondicionalCompuesta_UsandoO(){
+    if((5>9)||(7!=5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+//CONDICIONAL ANIDADAS ||
+function CondicionalAnidada_UsandoO(){
+    if(5>9){
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+    }
+    }else{
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+        }
+    }
+}
+
+//Ejercicio (((5>=5)!= (9<10))||(10>10)==false))
+function EjercicioCompuesto(){
+    if((((5>=5)!= (9<10))||(10>10)==false)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+function EjercicioAnidada(){
+    if(5>5){
+        if(9<10){
+            
+        }
+    }
+}
+
+</script>
+</body>
+</html>
