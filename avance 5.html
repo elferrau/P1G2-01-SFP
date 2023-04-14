@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+    <h2>avance 5</h2>
+    <p>Hola Mundo</p>
+    <h2>Universidad Privada Cumbre</h2>
+    <h1>Sergio Ferau Patiño - 8862940</h1>
+
+    <p>1.- Mostrar los pares de un número usando FOR</p>
+    <button onclick="mostrarNumerosParesDeN_FOR()">mostrarNumerosParesDeN_FOR</button>
+    
+    <p>2.- cuenta números usando FOR</p>
+    <button onclick="contarNumero_FOR()">contarNumero_FOR</button>
+    
+    <p>3.- cuenta número usando WHILE</p>
+    <button onclick="contarNumero_WHILE()">contarNumero_WHILE</button>
+    
+    <p>4.- mortrar número pares</p>
+    <button onclick="mostrarSoloParesDeN()">mostrarSoloParesDeN</button>
+    
+    <p>5.- mostrar números</p>
+    <button onclick="mostrarNumerosParesDeN()">mostrarNumerosParesDeN</button>
+    
+    <p>6.- factorizar número</p>
+    <button onclick="factorialNumero()">factorialNumero</button>
+    
+    <p>7.- saber si es par</p>
+    <button onclick="esPar()">esPar</button>
+
+    <p>8.- condicionalCompuesta_AND</p>
+    <button onclick="condicionalCompuesta_AND()">condicionalCompuesta_AND</button>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <script>
+
+//IF COMPUESTO
+
+function condicionalCompuesta_AND(){
+    if(((10 > 5) && (7 == 8) && (5 == 5))){
+      alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+//TAREA 5
+//Presentar en fecha 12/04/2023
+/*
+Investigar las etiquetas esenciales de HTML
+el nombre de la etiqueta y un ejemplo
+escrito en su cuaderno.
+*/
+
+//IF ANIDADO
+
+    function mostrarNumerosParesDeN_FOR(){
+        var numero = 16
+        for (var i = 1; i <= numero; i++){
+            if(i% 2 ==0){
+                alert(i)
+            }else{
+                //no hacer nada
+        }
+    }
+    }
+    function contarNumero_FOR(){
+        var numero = 5
+        for (var i = 1; i <= numero; i++) {
+            alert(i)
+        }
+    }
+
+    function contarNumero_WHILE(){
+        var numero = 5
+        var i = 1
+        while (i <= numero){
+        alert(i)
+        i = i + 1
+        }
+    }
+
+    function mostrarSoloParesDeN(){
+        var numero = 15
+        var i = 1
+        while(i <= numero){
+            if(i %2 == 0){
+            alert(i + " Es PAR ")
+            }else{
+            //No hacer nada
+            }
+            i = i + 1
+        }
+            alert("FIN")
+
+    }
+
+    function mostrarNumerosParesDeN(){
+        var numero = 7
+        var i = 1
+        while(i <= numero){
+            if(i % 2== 0){
+            alert(i + " Es PAR ")
+        }else{
+            alert(i + " No es PAR")
+        }
+            i = i + 1
+        }
+            alert("FIN")
+
+    }
+    function factorialNumero(){
+        var numero = 5
+        var i = 1
+        var resultado = 1
+        while(i <= numero){
+            resultado = resultado * i
+            i = i + 1
+        }
+            alert("El factorial de " + numero + " es " + resultado)
+    }
+
+
+    function esPar(){ 
+    var numero = 10
+    if(10 % 2== 0){
+        alert(numero + " Es PAR ")
+    }else{
+        alet(numero + " No es PAR")
+    }
+    }
+    
+    </script>
+    </body>
+    </html>
