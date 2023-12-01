@@ -1,0 +1,49 @@
+using System;
+
+public class ClaseArrayCadenas
+{
+    public string[] ArrayCadenas { get; set; }
+
+    public ClaseArrayCadenas()
+    {
+        ArrayCadenas = new string[26];
+    }
+
+    public void MostrarArray()
+    {
+        Console.WriteLine("Abecedario recursivo");
+        foreach (string cadena in ArrayCadenas)
+        {
+            Console.Write(cadena + " ");
+        }
+        Console.WriteLine();
+    }
+
+    public void GenerarAbecedarioIntercaladoRecursivo(int i = 0, bool mayus = true)
+    {
+        int letraInicial;
+
+        if (i < ArrayCadenas.Length)
+        {
+            if (mayus)
+            {
+                letraInicial = 65 + i;
+                mayus = false;
+            }
+            else
+            {
+                letraInicial = 97 + i;
+                mayus = true;
+            }
+
+            char letra = (char)letraInicial;
+            ArrayCadenas[i] = letra + "";
+
+            GenerarAbecedarioIntercaladoRecursivo(i + 1, mayus);
+        }
+        else
+        {
+            MostrarArray();
+        }
+    }
+}
